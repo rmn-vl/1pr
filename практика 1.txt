@@ -1,0 +1,321 @@
+1. Класс "Студент":
+
+class Student {
+private:
+    std::string name;
+    int age;
+    double averageGrade;
+public:
+    void setName(std::string studentName) {
+        name = studentName;
+    }
+
+    void setAge(int studentAge) {
+        age = studentAge;
+    }
+
+    void setAverageGrade(double grade) {
+        averageGrade = grade;
+    }
+
+    void getStudentInfo() {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Age: " << age << std::endl;
+        std::cout << "Average Grade: " << averageGrade << std::endl;
+    }
+};
+
+int main() {
+    Student student;
+    student.setName("John Doe");
+    student.setAge(20);
+    student.setAverageGrade(4.5);
+    student.getStudentInfo();
+
+    return 0;
+}
+
+
+2. Класс "Книга":
+
+class Book {
+private:
+    std::string title;
+    std::string author;
+    int year;
+public:
+    void setTitle(std::string bookTitle) {
+        title = bookTitle;
+    }
+
+    void setAuthor(std::string bookAuthor) {
+        author = bookAuthor;
+    }
+
+    void setYear(int bookYear) {
+        year = bookYear;
+    }
+
+    void getBookInfo() {
+        std::cout << "Title: " << title << std::endl;
+        std::cout << "Author: " << author << std::endl;
+        std::cout << "Year: " << year << std::endl;
+    }
+};
+
+int main() {
+    Book book;
+    book.setTitle("The Great Gatsby");
+    book.setAuthor("F. Scott Fitzgerald");
+    book.setYear(1925);
+    book.getBookInfo();
+
+    return 0;
+}
+
+3. Класс "Автомобиль":
+
+class Car {
+private:
+    std::string brand;
+    std::string model;
+    int year;
+public:
+    void setBrand(std::string carBrand) {
+        brand = carBrand;
+    }
+
+    void setModel(std::string carModel) {
+        model = carModel;
+    }
+
+    void setYear(int carYear) {
+        year = carYear;
+    }
+
+    void getCarInfo() {
+        std::cout << "Brand: " << brand << std::endl;
+        std::cout << "Model: " << model << std::endl;
+        std::cout << "Year: " << year << std::endl;
+    }
+};
+
+int main() {
+    Car car;
+    car.setBrand("toyota");
+    car.setModel("corola");
+    car.setYear(2021);
+    car.getCarInfo();
+
+    return 0;
+}
+
+4. Класс "Прямоугольник":
+
+class Rectangle {
+private:
+    double width;
+    double height;
+public:
+    void setWidth(double rectangleWidth) {
+        width = rectangleWidth;
+    }
+
+    void setHeight(double rectangleHeight) {
+        height = rectangleHeight;
+    }
+
+    double getArea() {
+        return width * height;
+    }
+};
+
+int main() {
+    Rectangle rectangle;
+    rectangle.setWidth(8.0);
+    rectangle.setHeight(2.0);
+    std::cout << "Area: " << rectangle.getArea() << std::endl;
+
+    return 0;
+}
+
+
+5. Класс "Круг":
+
+class Circle {
+private:
+    double radius;
+public:
+    void setRadius(double circleRadius) {
+        radius = circleRadius;
+    }
+
+    double getArea() {
+        return M_PI * pow(radius, 2);
+    }
+};
+
+int main() {
+    Circle circle;
+    circle.setRadius(3.5);
+    std::cout << "Area: " << circle.getArea() << std::endl;
+
+    return 0;
+}
+
+
+6. Класс "Человек"
+
+class Person {
+private:
+    std::string name;
+    int age;
+    std::string gender;
+public:
+    void setName(std::string personName) {
+        name = personName;
+    }
+    void setAge(int personAge) {
+        age = personAge;
+    }
+    void setGender(std::string personGender) {
+        gender = personGender;
+    }
+    void getInfo() {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Age: " << age << std::endl;
+        std::cout << "Gender: " << gender << std::endl;
+    }
+};
+
+  int main() {
+    Person person;
+    person.setName("Roman");
+    person.setAge(22);
+    person.setGender("man");
+    person.getInfo();
+    std::cout << std::endl;
+    return 0 ;
+}
+
+
+7. Класс "Телефон"
+
+class Phone {
+private:
+    std::string model;
+    double price;
+public:
+    void setModel(std::string phoneModel) {
+        model = phoneModel;
+    }
+    void setPrice(double phonePrice) {
+        price = phonePrice;
+    }
+    void getInfo() {
+        std::cout << "Model: " << model << std::endl;
+        std::cout << "Price: $" << price << std::endl;
+    }
+};
+
+int main() {
+    Phone phone;
+    phone.setModel("iPhone 12");
+    phone.setPrice(100000);
+    phone.getInfo();
+    std::cout << std::endl;
+
+    return 0;
+}
+
+8. Класс "Кот"
+
+class Cat {
+private:
+    std::string name;
+    int age;
+    std::string color;
+public:
+    void setName(std::string catName) {
+        name = catName;
+    }
+    void setAge(int catAge) {
+        age = catAge;
+    }
+    void setColor(std::string catColor) {
+        color = catColor;
+    }
+    void getInfo() {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Age: " << age << std::endl;
+        std::cout << "Color: " << color << std::endl;
+    }
+};
+
+  int main() {
+    Cat cat;
+    cat.setName("barsik");
+    cat.setAge(2);
+    cat.setColor("black");
+    cat.getInfo();
+    std::cout << std::endl;
+
+    return 0;
+}
+
+9. Класс "Телевизор"
+
+class Television {
+private:
+    std::string model;
+    int screenSize;
+public:
+    void setModel(std::string tvModel) {
+        model = tvModel;
+    }
+    void setScreenSize(int tvScreenSize) {
+        screenSize = tvScreenSize;
+    }
+    void getInfo() {
+        std::cout << "Model: " << model << std::endl;
+        std::cout << "Screen Size: " << screenSize << " inches" << std::endl;
+    }
+};
+
+int main() {
+    Television tv;
+    tv.setModel("Samsung ");
+    tv.setScreenSize(75);
+    tv.getInfo();
+    std::cout << std::endl;
+
+    return 0;
+}
+
+10. Класс "Банк"
+
+class Bank {
+private:
+    std::string name;
+    std::string country;
+public:
+    void setName(std::string bankName) {
+        name = bankName;
+    }
+    void setCountry(std::string bankCountry) {
+        country = bankCountry;
+    }
+    void getInfo() {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Country: " << country << std::endl;
+    }
+};
+
+int main() {
+    Bank bank;
+    bank.setName("sberbank");
+    bank.setCountry("RF");
+    bank.getInfo();
+
+    return 0;
+}
